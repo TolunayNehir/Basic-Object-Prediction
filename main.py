@@ -15,7 +15,7 @@ readf=f.read()
 class_names=readf.split(",")
 
 while True:
-        img=input("İmage:")
+        img=input("Image:")
         image = Image.open(str(img)).convert('RGB')
         size = (224, 224)
         image = ImageOps.fit(image, size, Image.ANTIALIAS)
@@ -35,7 +35,7 @@ while True:
         plt.imshow(image)
         plt.show()
 
-        a=input("Do you want tot quit y or n:")
+        a=input("Do you want to quit y or n:")
     
         if a=="y":
             break
